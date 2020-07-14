@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OyunActivity">
+
+    <TextView
+        android:id="@+id/txtOyunEkrani"
+        android:layout_width="266dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:text="OYUN EKRANI"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSonuc"
+        android:layout_width="237dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text="SONUÇ:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOyunEkrani" />
+
+    <Button
+        android:id="@+id/btnPuanKazan"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:background="#2D41CA"
+        android:text="Puan Kazan"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSonuc" />
+
+    <Button
+        android:id="@+id/btnSonrakiBolum"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="47dp"
+        android:background="#7A0A2A"
+        android:text="Sonraki Bölüm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPuanKazan" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>
